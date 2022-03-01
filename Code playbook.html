@@ -1,0 +1,967 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <!-- bootstrap css -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <!-- CSS FILE -->
+    <link rel="stylesheet" href="css/codeplaybook.css">
+    <title>Code playbook</title>
+  </head>
+  <body>
+    <!-- back-to-top-button -->
+    <div id="back-to-top-btn" onclick="topFunction()" title="Back to top">
+      ^
+    </div>
+
+    <!-- FIRST SECTION -->
+
+  <section class="first-section">
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container-fluid">
+        <button href="#" class="btn-primary navbar-control" id="master-button" type="button" data-bs-toggle="collapse" data-bs-target=".multi-collapse" aria-expanded="false" aria-controls="multiCollapseExample1 multiCollapseExample2">Notes</button>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" id="navGeneralNotes-Button" aria-current="page" href="#general">General Notes</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="#tips">Tips</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#theory">Theory</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#resources">Resources</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#html">HTML</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#css">CSS</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#bootstrap">Bootstrap</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#javascript">Javascript</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#angular">Angular</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Speech Bubble -->
+    <div>
+      <div class="bubble">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque tempora at laboriosam minima rerum exercitationem ipsum hic velit consectetur sed aperiam, commodi unde nemo. Harum molestiae voluptatum porro nobis assumenda?</div>
+      <div class="pointer"></div>
+    </div>
+    <p style="text-align: center;">Uhn</p>
+
+    <h1 class="first-heading"> Heading level 1 <h1>
+    <h2> Heading level 2 <h2>
+    <h3> Heading level 3 <h3>
+    <h4> Heading level 4 <h4>
+    <h5> Heading level 5 <h5>
+    <h6> Heading level 6 <h6>
+      <br>
+    <h1 style="font-size:60px;"> Heading Big </h1>
+    <br>
+    <!-- -->
+    <!--This is a comment tag. Comment tags are unseen in the browser-->
+    <center>
+    <hr size="3" noshade>
+    <h1> THE CODING NOTES OF <br>SHERLOCK HOLMES </h1>
+    <br>
+    <h3> BY </h3>
+      <br>
+      <h2> FEMI OLOWOFOYEKU </h2>
+    <hr size="3" noshade>
+      <!-- -->
+    <!--This is a comment tag. Comment tags are unseen in the browser-->
+    </center>
+      </section>
+
+<!-- SECOND SECTION -->
+
+    <section class="second-section">
+    <!-- hidden comment against the next lesson -->
+
+    <!--
+    CSS:
+    body {
+      background-color: #EAF6F6;
+    }
+    hr {
+      border-style: dotted none none;
+      border-color: grey;
+      border-width: 5px;
+      width: 2.5%;
+    }
+
+    The border has been styled to have the top dotted, the left&right none
+    and the bottom none, so that only the top shows the dotted effect causing it to
+    just appear as a few dots floating in thin air.
+    -->
+
+    <!-- General Notes -->
+                                              <!-- COLLAPSE WORKS v v v --> 
+
+    <h1> <a class="btn btn-primary collapse-button" id="generalNotes-button" data-bs-toggle="collapse" href="#generalNotesSection" role="button" aria-expanded="false" aria-controls="multiCollapseExample1">GENERAL NOTES</a></h1>
+    <div class="row">
+      <div class="col">
+        <div class="collapse multi-collapse" id="generalNotesSection">
+          <div class="card card-body">
+
+<!-- COLLAPSE WORKS ^ ^ ^-->
+
+            <h1 id="general"> General Notes </h1>
+    <p>The CSS syntax is thus: <span>selector {property: value;}</span></p><br>
+    <p>the ; is essentially the css equivalent of a fullstop</p><br>
+    <p>A css comment is added thus /* comment */</p><br>
+    <p>In html, a "class" is used to say more about an element, classifying it as whatever
+    you  specify, so that later in your css file, you can specify the formatting
+    to be applied to certain classes.
+    </p>
+    <br>
+    <p>in CSS id is used exactly like class but there can be only one instance of an
+       id and an element can't have two ids. <br>A pseudo-class is used to define a special state of an element. For example, it can be used to: Style an element when a user mouses over it. <br> When referring to a class from the HTML file inside the css file be sure to add a . before the class.
+       <br>If you want to refer to an 'id', then use a # instead of a . like with a class.
+       <br>To add a font, put its link in the head tab, then in the css file you can
+        now specify "font-family" as the font name.</p>
+       <br>
+    <p>Favicons can be made at favicon.ico site and the file extension of a favison is .ico</p>
+    <br>
+    <p>Width and height are better done using percentages
+       rather than pixels. <span>width:30%; height:10%;</span> </p>
+    <p>A pseudo class is made thus-- .class:hover; <br>In this case it's the pseudo class 'hover'</p>
+    <p><b>Block and Inline Elements </b><br />A block-level element is an HTML element that begins a new line on a web page and extends the full width of the available horizontal space of its parent element. <span>Display: block;</span><br />Inline elements are those which only occupy the space bounded by the tags defining the element, instead of breaking the flow of the content. <span> Display: inline;</span>
+      <br />Common "block elements" are p, h, div, lists, forms. <br> Common "inline elements" are imgs, spans, anchors</p>
+    <p>You can use css to make all (or 1) paragraphs inline by using the "display" tag, but the width of inline stuff can't be changed.
+    Inline-block is used to eat your cake and have it in this case. You can use it to create an inline element that can adjust its width.  The syntax is <span>Display:inline-block;</span></p>
+    <br><p><b>Positioning</b><br />There are 4 types of position: <br />Static (default positioning in html) <br />Relative (realtive to where it was before, can overlap others; remains in the html flow) <br />Absolute (its position in relation to its parent box; this takes it out of the html flow) <br />Fixed (frozen)</p>
+    <p><b>Taking an element out of the html flow</b> means other elements would move based on how it moved. Keeping an element in the html flow means only it would move and other elements would remain as they were. <br />Relative positioning syntax, given you've set the position to relative, <span>.img{position: relative; top:30px;}</span>
+      <br />Absolute positioning syntax, given you've set the position to absolute, <span>.img{position: absolute; right:30px;}</span></p>
+      <p><b>Using absolute positioning</b>:  when you say <span>top:30px;</span>, you're adding a 30px margin between the top of the parent and the object itself. If you say <span>right:10px;</span>, it would get a margin of 10 pixels from its parent's right. Same with any other side.</p>
+    <p>If width is set you align using <span>margin:auto;</span>  if no width is set just use text align.</p>
+    <p><b>Fonts:</b> In adding a font, copy its link to your html and copy its css to your css file so even if the person's
+    computer doesn't have the font it can pick it from the cloud.</p>
+    <p>"rem" is a unit of size (like px) that ignores parent settings so it doesn't
+    inherit a different starting point than you expect.</p>
+    <p>Line-height, 1 is the default and 2 is double etc.Don't specify the pixels</p>
+    <p><b>Send an email button:</b> this is done like so</p>
+          </div>
+        </div>
+      </div>
+    
+    </div>
+    <hr size="3" noshade>
+
+    <!-- TIPS -->
+                                                    <!-- COLLAPSE WORKS v v v --> 
+
+    <h1> <a class="btn btn-primary" data-bs-toggle="collapse" href="#tipsSection" role="button" aria-expanded="false" aria-controls="multiCollapseExample1">Tips</a></h1>
+  
+    <div class="row">
+      <div class="col">
+        <div class="collapse multi-collapse" id="tipsSection">
+          <div class="card card-body">
+            <center>
+              <h1 style="font-size:40px;" id="tips">
+                TIPS</h1></center>
+              <p><strong>Tip for making your own site: when you wanna make your own site, especially if
+                you want it to be responsive, it helps to first design the wireframe, then make
+              that wireframe out in boxes and get it responsive. When you now have a functional
+              site that is fashioned after your wireframe but with boxes and lorem ipsum (latin) text, you can
+              now start adding your own text, images etc, then you're sure your site is good. Archive the box version before adding the details.</strong></p>
+              <p>When you're sure that you're editing the right class or id, it helps to look at
+              it, decide how else you want to make it look, then add more details to css or
+               whichever else code you're writing.</p>
+               <p>It's always good to get modules of your site like say a scroll bar or a carousel
+                 or a header working perfectly using something like codeplay or codepen FIRST
+               before copying the working code to your actual code file so that if it's broken
+              you know it was some interaction with something else in your code that broke it,
+              not that the code for that module itself was bad.</p>
+              <p>Anything you're looking for is just a quick google away. From tags to debugging (which may not be so quick).</p>
+              <p>Always remember that a browser comes with predefined css which you may sometimes have to override with your own css.</p>
+              <p><em>I have found that the core of this coding thing is to just be creative in using
+                the tags and tricks you know to solve problems. So understand the use of many tags,
+                the tenets of site building (grid, blocks etc ) and the ability to help yourself find these solutions
+                online (and in past tutorial videos)!</em></p>
+          </div>
+        </div>
+      </div>
+    
+    </div>
+    <hr size="3" noshade>
+                                                    <!-- COLLAPSE WORKS ^ ^ ^-->
+
+    
+
+
+    <!-- THEORY -->
+                                                    <!-- COLLAPSE WORKS v v v --> 
+
+    <h1> <a class="btn btn-primary" data-bs-toggle="collapse" href="#theory-Section" role="button" aria-expanded="false" aria-controls="multiCollapseExample1">Theory</a></h1>
+  
+    <div class="row">
+      <div class="col">
+        <div class="collapse multi-collapse" id="theory-Section">
+          <div class="card card-body">
+            <center>
+              <h1 style="font-size:40px;" id="theory">
+                THEORY</h1></center>
+              <p>CDN - computer delivery network, are points around the world data can be retrieved from. It determines how long it takes for your website to load up.</p>
+              <p>"user-agent-stylesheet" is the basic css being applied to a site by the browser.</p>
+          </div>
+        </div>
+      </div>
+    
+    </div>
+    <hr size="3" noshade>
+ 
+
+
+
+    <!--This is a comment tag. Comment tags are unseen in the browser-->
+
+      <!-- RESOURCES -->
+                                                        <!-- COLLAPSE WORKS v v v --> 
+
+    <h1> <a class="btn btn-primary" data-bs-toggle="collapse" href="#resources-Section" role="button" aria-expanded="false" aria-controls="multiCollapseExample1">Resources</a></h1>
+  
+    <div class="row">
+      <div class="col">
+        <div class="collapse multi-collapse" id="resources-Section">
+          <div class="card card-body">
+            <center>
+              <h1 style="font-size:40px;" id="resources">
+                RESOURCES</h1></center>
+              <p>Fonts: cssfontstack.com <br>Favicons: favicon.ico site <br>Colors: colorhunt
+                <br>Vector icons: flaticon.com <br>GIFs: gify.com <br>Wireframing: balsamiq.cloud
+              <br>Bootstrap testing: codeply.com <br> Image Cropping: crop-circle.imageonline.co <br>FalseText: loremipsumgenerator.com
+              <br>Font icons: fontawesome.com <br>Frontend modules: Bootsnipp.com gets you the code of
+              various modules of a site like galleries etc.<br>UI templates: uipatterns.com <br>Javascript drills: stanford karel ide <br>Flow charts making: Draw.io </p>
+          </div>
+        </div>
+      </div>
+    
+    </div>
+
+    
+
+    <!-- raging crab! I can hold cmnd + / to turn highlighted text to a comment!! -->
+
+    <!--This is a comment tag. Comment tags are unseen in the browser-->
+
+    <hr size="5" noshade>
+
+
+
+    <!-- HTML TAGS -->
+
+                                                    <!-- COLLAPSE WORKS v v v --> 
+
+    <h1> <a class="btn btn-primary" data-bs-toggle="collapse" href="#html-Section" role="button" aria-expanded="false" aria-controls="multiCollapseExample1">HTML</a></h1>
+  
+    <div class="row">
+      <div class="col">
+        <div class="collapse multi-collapse" id="html-Section">
+          <div class="card card-body">
+            <h1 style="font-size:40px;" id="html">
+              HTML</h1>
+              <p>The scope attribute (class is a type of attribute) specifies whether a header cell is a header for a column, row, or group of columns or rows. The scope attribute has no visual effect in ordinary web browsers, but can be used by screen readers. Syntax: <span>scope="row"</span><br>
+              The colspan attribute defines the number of columns a table cell should span.</p>
+            <p>"span" tag is used to specify the span </p>
+            <p>"ul" unordered list is used to make a list with no bullets</p>
+            <p>"li" list is used insdide the 'ol' or 'ul' to add content to your list.</p>
+            <p>"center" is used to center text (anything really) on the screen.</p>
+            <p>"a" is the anchor tag used for adding links.</p>
+            <p>'&nbsp;' is used to add space between words. Check source code of this sentence to see what added the space in the ''</p>
+            <p><strong><code>&lt;html&gt;</code></strong> This is how to write html that shows on webpage with its tags. It uses & lt; (without the space after &) as the < bracket, & gt; (without the space after &) as the > bracket. </p>
+          </div>
+        </div>
+      </div>
+    
+    </div>
+    <hr size="5" noshade>
+    
+
+    <!-- CSS TAGS -->
+
+                                                    <!-- COLLAPSE WORKS v v v --> 
+
+    <h1> <a class="btn btn-primary" data-bs-toggle="collapse" href="#css-Section" role="button" aria-expanded="false" aria-controls="multiCollapseExample1">CSS</a></h1>
+  
+    <div class="row">
+      <div class="col">
+        <div class="collapse multi-collapse" id="css-Section">
+          <div class="card card-body">
+            <h1 style="font-size:40px;" id="css">
+              CSS</h1>
+              <p><b>Notes</b>
+                <br>
+               You can select more than one class for the same styling by separating the classes with a comma like so <span>.class1:hover, .class22{ }</span> </p>
+              <br>
+           <p>"center" tag used to center stuff on the page</p>
+           <p>"display" tag is used to specify how a tag would show. none, inline etc.</p>
+           <p>"visibility" makes something disappear but its space remains, unlike "display: none;" that makes it as though it were never there.</p>
+           <p>"float" is used to cause an object to float to a specified area (eg left). Note: use for only wraping text around stuff, to position objects use positioning stuff like the 4 types of positioning, margin, padding etc .</p>
+           <p>"clear" is the opposite of float, meaning it doesn't let anything to the cleared direction of its box even if that means moving downwards.</p>
+          </div>
+        </div>
+      </div>
+    
+    </div>
+    <hr size="5" noshade>
+      
+    
+
+    <!-- BOOTSTRAP -->
+                                                        <!-- COLLAPSE WORKS v v v --> 
+
+    <h1> <a class="btn btn-primary" data-bs-toggle="collapse" href="#bootstrap-Section" role="button" aria-expanded="false" aria-controls="multiCollapseExample1">Bootstrap</a></h1>
+  
+    <div class="row">
+      <div class="col">
+        <div class="collapse multi-collapse" id="bootstrap-Section">
+          <div class="card card-body">
+            <h1 style="font-size:40px;" id="bootstrap">
+              BOOTSTRAP</h1>
+            <p>Container class: <span>class="container";</span>containers are automatically responsive.<br>"container-fluid" is
+            full screen stretch while regular has a responsive gutter.<br>Keep the content of
+            your sections in a container-fluid class div to make it look pro.</p>
+            <p>Grid system: In the grid system, the screen is divided into 12 units. The smallest column
+            you can make is 2 units, covering 2/12th of the screen.<br>Columns "col" can be
+            divided made responsive by specifying their behavior on different screen sizes
+            using lg, md, sm, etc. So <span>col-lg-6</span> means a large column that takes half of the screen. </p>
+          </div>
+        </div>
+      </div>
+    
+    </div>
+    <hr size="5" noshade>
+
+
+        <!-- Javascript -->
+                                                    <!-- COLLAPSE WORKS v v v --> 
+
+    <h1> <a class="btn btn-primary" data-bs-toggle="collapse" href="#js-Section" role="button" aria-expanded="false" aria-controls="multiCollapseExample1">JavaScript</a></h1>
+  
+    <div class="row">
+      <div class="col">
+        <div class="collapse multi-collapse" id="js-Section">
+          <div class="card card-body">
+           
+    <h1 style="font-size:40px;" id="javascript">
+      JAVASCRIPT</h1>
+    <p><i>A best practive is to write the pseudocode in order as comments then the actual code to impliment each pseudo comment under it so when it runs they all run together, ignoring the comments.If need be, steps can be further broken down.</i></p>
+    <p>The syntax is <span>alert("uhhn");</span> then for variables it's <span>var= myName;</span> <br>Remember ; is the sentence fullstop. </p>
+    <p>Remember the script would playout in the order that you wrote it, so be sure to define variables before they're called up when scripting. Chronology is so key that a variable can return a different value depending on changes its gone through in the Chronology.</p>
+    <p>Remember that counting always starts from 0</p>
+    <p>Concactenation: the joining of strings together in a message.</p>
+    <p>Camel-case naming: example is myName, yourName. 'Pascal casing' is MyName YourName.</p>
+    <p>Commenting: // before text is used to write comments. Comment like css to make multiole line comments.</p>
+    <p>Tags can be put inside eachother logically to come up with a result.</p>
+    <p>Maths: there's +, -, /, * then there's 'modulo' (represented by %) which returns the remainder of if long division was done. e.g 9%6 is 3. <br>It also applies BODMAS order. It's a best practice to use () even though you know it'll happen first. Just for clarity. You can use parenthesis inside parenthesis to make it abundantly clear. </p>
+    <p>Increment: value++ is value +1. That's an increment. Decrement is value-- which is value-1.<br>x+=2 is a way of saying x = x+2, giving a new value for x. Num/=3 is the same as Num= Num/3 </p>
+    <p>Functions: basically macros. You create it then call it. Syntax is <span>function getMilk(){}</span> The code is put in the {}. There's no fullstop ; with this one until when calling it up. Calling it up, just say <span>getMilk();</span> <br>When using the () example, <span>function getMilk(bottle){}</span>, what's in the () is similar to a var in that when you call up the function, whatever figure you put in the () will enter the formula and be worked with.
+      <br> There's yet another way to use this thus: <span>function getMilk(X){ return money % X; }</span></p>
+    <p>Return: return 5 % 1.5; means to return the result of 5%1.5. Of course these figures could be replaced with vars or anything else. </p>
+    <p>Control flow: controlling the flow of your code using things like if, else.</p>
+    <div class="comparatives">
+     <p>Comparatives: The symbols used to compare different values like the === (essentially datatypes are equal) and the == (which is also equals to but datatype doesn't matter, whether it's a string or a variable) <br>!== means not equals to. <br>&& means and. || means or. ! means not. </p>
+   </div>
+   <p>Arrays: are sets of data stored in a single variable. I uses square brackets []. <span>var numbers =[0,1,2,3,4,5]; </span> To retrieve an entry from the array use <span>arrayName [3];</span> where 3 is the position of what you want to retrieve from the array. Remember to use the square brackets and add your fullstop ; <br>
+     <span>arrayName.includes()</span> is used to check whether whatever is in the bracket is included in an array. <br>
+   <span>arrayName.push();</span> adds whatever you write in the bracket to the front of the array data. <br>
+     <span>arrayName.pop;</span> removes the data in the last place (most recent) from an array.</p>
+     <p>Template Literals: are used to insert an expression into a string. E.g `my name is <span>${this.name}</span> so be kind.`</p>
+    <br>
+    <h3>Tags</h3>
+    <p>"var" is used to commit something to browser memory (this can be forgotten by clearing the cache cmnd+k). A var name can't begin with numbers but can contain numbers.</p>
+    <p>"alert" used to cause browser to display an alert</p>
+    <p>"prompt" used to make a popup user can write in.</p>
+    <p>"length" use tweet.length to return the length of the tweet. <span>Word.length</span> returns the length of the word.</p>
+    <p>JS knows maths so you can say (tweetCount + 40) and it'll return the value (if tweetCount is a defined var like )</p>
+    <p>"slice" is used to return a portion of something. Its syntax is <span>bread.slice(x,y)</span> where bread is the element to slice, x is the starting position to slice from and y is the position to stop just before.</p>
+    <p>".toUpperCase" is used to make something all caps. Syntax is <span>word.toUpperCase()</span></p>
+    <p>"console.log()" is like an alert that pops up in the console so it's just for devs to see not the user. It's events happening in the backend. You can use alert instead to make them happen in the front end kinda.</p>
+    <p>"Math.floor()" is used to round down a decimal figure you put in the bracket.It is case sensitive so if the M isn't capital, it won't work.</p>
+    <p>"Math.pow()" is used to raise a number to a power. <span>Math.pow(number, powertoraiseby)</span> where the number is whatever figure you type first and the power to raise by is the second figure you type. </p>
+    <p>"Math.round()" is used to round a figure to the nearest whole number instead of just rounding it down.</p>
+    <p>"Math.random()" generates a random number from zero but never reaches 1. There is nothing inside the (). People often use it with +1 to cause it to return a higher value then * another figure to further get the range they want returned.</p>
+    <p>Use if controls thus <span>"if (track === "clear"){goStraight();}" <br>else {turnRight();} </span> </p>
+    <p>"getElementById" is used to tell JS which element you're reffering to, hence causing it to selece the element.</p>
+    <p>"document.getElementById" tells it to get an element from the whole document. That's why it's <span>document.</span>.</p>
+    <p>"mybutton.style.<span>display = "block";</span>" use this to control the style of the var 'mybutton', the css being <span>display = "block";</span>.</p>
+          </div>
+        </div>
+      </div>
+    
+    </div>
+
+    
+
+
+
+
+                <!-- ANGULAR -->
+                                                    <!-- COLLAPSE WORKS v v v --> 
+
+    <h1> <a class="btn btn-primary" data-bs-toggle="collapse" href="#angular-Section" role="button" aria-expanded="false" aria-controls="multiCollapseExample1">Angular</a></h1>
+  
+    <div class="row">
+      <div class="col">
+        <div class="collapse multi-collapse" id="angular-Section">
+          <div class="card card-body">
+            <h1 style="font-size:40px;" id="angular">
+              ANGULAR</h1>
+              <h4 id="ng-theory" >Theory</h4>
+              <p>- Angular is a Javascript framework for building client side applications (apps that run on client's browser).
+                <br>- Code is written in Typescript which is an enhanced version of Javascript.
+                <br>- Structure is reusable components. Then services that give them functionality like drawing data from database, performing methods etc.
+                <br>- The template is the UI (html), the class has properties and methods (css and typescript), which are defined in the ts file. Additional info is defined with meta data.
+                <br>- There is only one index.html file in a web app. It then draws its other pages and interface changes from other files.
+                <br>- Export is indicated before a component so it can be used across the app.
+                <br>- Dependencies are packages required for development (DevDependencies) and deployment. 
+                <br>- Package.json file holds every file the app needs to run. It ensures everyone on the team installs the right stuff for the app. npm install then installs everything defined in the package.json file.
+                <br>- When adding <b>Bootstrap</b> and <b>Font-awesome</b>, the links are drawn from the node_modules file not the web.
+                <br>- For a <b>component (eg app.components) to pull another component (eg pm-products) as a directive</b>, the component being pulled must have been declared in a module which will serve as its parent. 
+                <h4 id="ng-tips">Tips</h4>
+                <p>- When you have error messages, the one at the top is likely the one that's responsible for the whole long list of errors.
+                  <br>- Any feature that isn't working probably has its module missing. So when building, understand what module controls what so that you can import and declare (things imported from outside sources are declared under imports) accordingly.<br>
+                  -It helps to draw out the map of your app. i.e the modules, components, imports and exports like the tutorial does. It helps you understand your app better. And if editing a template, it also helps understand the template you're working on. Ultimately, it gives you a deeper understanding of how Angular works.<br>
+                  -Do not use capital at all in file and folder naming, as a convention!<br>
+                  -Always first study the structure of an app that you want to edit before tweaking it or trying to generate shit.
+                  -Reference the checklists of the tutorial modules when stuck.</p>
+                <!-- <p>The AppModule holds the AppComponents so that's where is checked to pull the components from. It also holds the BrowserModule.</p> -->
+                <h4 id="ng-components">AppComponents syntax</h4>
+                <div id="frame">
+                 <code><p> <span>import</span> { Component } from '@angular/core';</p>
+        
+                <p> <span>@Component</span>({ </code><br>
+                    selector: <code> 'app-component-overview', </code><br>
+                    templateUrl: <code> './component-overview.component.html', </code><br>
+                    styleUrls: <code> ['./component-overview.component.css'] <br>
+                  })</p>
+        
+                <p><span>export class</span> ComponentOverviewComponent { <br>
+        
+                  }</p></code>
+        
+                </div>
+                <p>Where the "selector" is like the id of the component. That lets you use it as a 'directive'(input it) in other components. <br>The selector is used as a html tag in the body.</p>
+                <p><span><b>The class:</b></span> defines the properties and methods needed by the view.</p><br>
+                <span><b>Component decorator:</b></span> defines the metadata (includes the view).<br> <img src="Images/Component html syntax.png" class="in-line-image" alt=""> <br>
+                The top dection shows imports that we need for the page to run. 
+                <p><b>Class syntax</b><br> <img src="Images/class.png" class ="in-line-image" alt=""> <br> class name in pascal casing. <br> <img src="Images/class methods:proprties.png" class ="in-line-image" alt=""> <br> method and property names in camel casing. They live inside AppComponent{}        <br> A class becomes a component when given metadata. <br>@Component({<br>
+                  metadata is all within here
+                  <br>}) <br>
+                   <span>The decorator: </span> is the @component(). All decorators have @ and are functions so have () and the {} encases the metadata that's passed into it. 
+                   <img src="Images/component decorator.png" class ="in-line-image" alt=""> <br>
+                   <span>pageTitle</span> picks its string from the class. <span>pm-root</span> is called up later as a html tag. <br>
+                   <img src="Images/import syntax.png" class ="in-line-image" alt=""> <br>
+                   You're telling Angular where to find that 'component decorator' function. THIS SHYTE IS CASE SENSITIVE!
+        
+        
+                <p>Everything you 'declare' in a file must first be imported before it'll work and vice versa. <B>In a module, you must declare the components before it can hold them.</B> Here's the module format:</p> 
+                <img src="Images/Angular module format.png" class ="in-line-image" alt=""><br> 
+                <img src="Images/Angular Modules more.png" class="in-line-image" alt=""> 
+                <p>Using the 'selector' of a component, you can then fix the component into another component, say like as a child.</p>
+                <img src="Images/components syntax.png" class ="in-line-image" alt=""> 
+                <p>The image shows the selector pm-products being called as a directive in the template of app.components.ts to generate its html.
+                  <br><span>Let's have a little story. Angular comes and sees the above image. He notices the html in the app.components is a directive. He then looks inside the app.module for it and when he sees it's been imported from a certain location AND declared, he now knows where to find it;- in the product-list.components file (which has its html templateUrl linked to it from another file). Now he can display the page.</span>
+                </p>
+                <p><b>More on Modules</b><br>
+                The Angular module provides a template resolution environment for each component that belongs to the module, giving it a way to find and resolve the special syntax put into our html. In other words, the module provides everything the components need to work. Template resolution is done module by module.</p> <img src="Images/Exporting.png" class="in-line-image" alt=""><i>Stuff you can export</i>
+                <p>ngModel is a directive used for two way binding. It's part of the FormsModule. FormsModule is imported for two way binding to work.<br>
+                #ImportTruth: Imports are not inherited, meaning if moduleA imports moduleB, then moduleC imports moduleA(who now has B in him), B still wont be accessible to C(even though A has B and C has A). However, if A re-exported B then C can have access to B.<br>
+                Don't use the 'providers' array to register servies anymore (old practice), use providedIn inside the @injectable. Like so <br> <img src="Images/Providers new format.png" class="in=line-image" alt=""> </p>
+                <p>It may give an error when the same components are declared in multiple modules. <br>
+                  Declaration essentially is the module stating (by listing) the components that belong to it (along with the directives and pipes those components need). They can only be declared in one module. <br>
+                The bootstrap array basically defines what the index.html file needs to start up the application.  </p> <img src="Images/Modules Imports in a nutshell.png" class="in-line-image" alt=""><br><img src="Images/Modules Exports in a nutshell.png" class="in-line-image" alt="">
+                <br>
+                
+
+
+                
+                <div>
+                  <P id="ng-renames"><b>If I were to rename some of the Angular lingo, this is what i'll call them:</b></P>
+                  <ul>
+                    <li>selector = name</li>
+                    <li>template = html UI</li>
+                    <li>decorator = Angular component identifier</li>
+                    <li>directive = pre-defined html calledup</li>
+                    <li>metadata = info</li>
+                    <li>data binding = linking data to ui</li>
+                    <li>property binding = databinding that calls property value from elsewhere</li>
+                    <li>event binding = respond to event by binding</li>
+                    <li>two-way binding = template-component reactions</li>
+                    <li>bootstrapping = knighting as homepage</li>
+                    <li>module = components holder</li>
+                    <li>template expression = template's bound data</li>
+                    <li>interpolation = {{one-way binding}}</li>
+                    <li>*ngIf = make shit appear/disappear</li>
+                    <li>*ngFor = make shit format the same</li>
+                    <li>pipes = style databound</li>
+                    <li>boolean = datatype, true/false</li>
+                    <li>parameter = pipe metadata </li>
+                    <li>interface = property/method set</li>
+                    <li>getter and setter = filter shit</li>
+                    <li>backing variable = filter pool</li>
+                    <li>container component = parent component</li>
+                    <li>nested component = child component</li>
+                    <li>OnChanges = when anything changes,..</li>
+                    <li>dependency = stuff classes need to work</li>
+                    <li>reactive extensions(RxJS) = </li>
+                    <li>observables = array of fleeting momentous events</li>
+                    <li>asynchronus = responds at later time (like emails)</li>
+                    <li>synchronus = real-time responses (like phone call)</li>
+                    <li>operators = do shit to data.</li>
+                    <li>generics = &lt;dataset></li>
+                    <li>route parameter = route id</li>
+                    <li>snapshot = read a parameter one time</li>
+                    <li>safe navigation operator = ? retutning 'null'</li>
+                    <li>ActivatedRouteSnapshot = stores info on a route at any time stamp</li>
+                    <li>private = only accessible by stuff in the same module</li>
+                    <li>lazy loading = load home first, others asynchronously for speed.</li>
+                  </ul>
+                </div>
+                <p id="ng-bindings" ><b>Data binding</b> coordinates communication between a template and its class. 
+                <br><b>Property binding</b> calls property value from elsewhere. Syntax <span>&lt;img [src]="product.imageUrl"&gt;</span> where the property src is being drawn from the template expression value of imageUrl. It can also be done using interpolation like so <span>&lt;img src={{product.imageUrl}}&gt;</span>. <br> Another example, <span>&lt;h1 [inputName]='crabs.legPart'&gt;&lt;/h1&gt;</span> <br> <img src="Images/property binding 1.png" class ="in-line-image" alt=""> <img src="Images/property binding 2.png" class ="in-line-image" alt="">
+                <br><b>Event binding</b> instead of binding a template element to a component class property, it does the reverse by sending a user action to the component to retrieve new formatting. E.g, a button may listen for a click then call up a function from the component property class. <img src="Images/Event binding.png" class ="in-line-image" alt=""> <br> <img src="Images/summary-dataBinding.png" class="in-line-image" alt="">
+                <br>
+                <h4 id="ng-pipes">Pipes</h4>
+                Pipes style bound data before it's shown. Pipe syntax is <span>{{ product.productStuff | pipecommand: 'extra1' : 'extra2' : '1.2-2' }}</span> where extra are parameters and '1.2-2' means one whole figure and 2dp (2-2). A pipe must be declared (and imported) all the way in the app module before components can use it.
+                <br>Build a pipe when you want to perform application wide transformations.</p> <img src="Images/pipe examples.png" class="in-line-image" alt="">
+        
+                <p id="ng-interpolation" ><b>Interpolation</b> is a data binding technique. Its synatx is <span>< >{{pageTitle}}< ></span> It's a one way binding from class to template. Class is <span>pageTitle: string = 'kdgjs';</span></p>. (I could make the data type any [] if I wasn't sure what data type the user would input.) The template is updated with the value of pageTitle as it changes based on the user's actions. It can even be used like a Concactenation. Here's the syntax:
+                <br>
+                <img src="Images/interpolation.png" class ="in-line-image" alt=""> <br>
+                <p><b>Directives:</b> are essentially custom html.   <br>While directives are custom html, Angular also has its own preset <b>directives</b>; *ngIf (if logic), *ngFor (for loops) which are structural directives.
+                  <br>The syntax for *ngIf is <span>*ngIf="propertyName.length"</span> It removes data tagged with it (as like a html class) if their value is null or undefined. It's useful to access multiple properties or hide titles and labels.
+                  <br><span id="ng-for-if" >*ngFor='let product of products'</span> is the syntax of ngFor loops where 'product' becomes a variable beause it's after 'let'. <br>
+                  <img src="Images/ngFor loops 0.png" class ="in-line-image" alt=""> 
+                  <br> the syntax shows the creation of variable 'product' calling up properties from another file. NB: if you used 'product <b>in</b> products' then the for loop would return the properties like <b>indexes</b> (0,1,2 etc) of the values in the array instead of the objects themselves.
+                  <br>
+                  <img src="Images/ngFor loops.png" class ="in-line-image" alt=""> 
+                  <br> Image shows databinding from the .ts file to the html file, then the html file uses *ngFor loops to generate the same formatting for every product, and it keeps doing that again for every product in the list, hence the loop part. The th and td are matched so the td appears under the th cells in the template. The product properties are databound that's why I highlighted them with matching colors.
+                  <p>So essentially, you make a property in the class; an array of products, then bind it to the html table using *ngFor loops. Match the td (table data) with the th (table head) so it all appears in the right place.</p>
+                </p>
+        
+                <p id="ng-interfaces" ><b>Interface</b> is a specification used to make angular identify a related set of properties and classes. It's used to specify custom types for strong typing to recognize and intellisense. It's best used for data types unique to the app you're building.</p> <img src="Images/Interfaces use.jpg" class="in-line-image" alt="">
+                <p id="ng-lifecycle-hooks"><b>Lifecycle hooks:</b> are landmark points in the rendition of the application on which you can instruct angular to act. E.g onInit, which is used by <span>ngOnInit(): void {}</span> </p> 
+                <img src="Images/lifecycle hooks 3 egs.png" alt=""> <br>
+                <i>This explains OnInit, OnChanges and OnDestroy. They are stages in the running of the application where we can use as landmark anchors to perform a method.</i> <br>
+                OnChanges only watches for changes to input properties. 
+                <p id="ng-backing-variables"><b>Backing variable:</b> is the variable that acts as the pool of lists that a filter is drawn from. <span>private _amount: number = 0 </span> What makes it different is you can write a code to process it when it's get or set. </p>
+                <p id="ng-gettersnsetters"><b>Getters & Setters.</b></p>
+                <div id="frame">
+                  <code> <p> <span>private</span> _listFilter: string = ' '; </p><br>
+                    <p><span>get</span> listFilter(): string { <br>
+                      &nbsp;&nbsp;return this._listFilter; <br>
+                    } </p> <br>
+                    <p><span>set</span> listFilter(value: string){ <br>
+                      &nbsp;&nbsp;this._listFilter = value; <br>
+                      &nbsp;&nbsp;console.log('In setter: ', value); <br>
+                    }</p>
+                  </code>
+        
+                  <!-- &nbsp; is used to add spaces between words also &ensp;-->
+                 </div>
+              </p>
+              <br>
+              <h4 id="ng-nesting">Nesting Components</h4>
+              <p>A component can be used as a directive in another component by using its selector as a custom html tag. The child component can get info from the parent to use to format its html using the @inputs decorator. Anything inside that <span>@inputs()</span> is content it's collecting from the parent. Since it's a decorator, it has to be imported in the imports segment.<br>
+              The only thing a nested component can send to its parent is an @output() event. It's used by the child to relay events back to the parent based on a user's action. Only EventEmmiter can be tagged with @output decorator. <b>Reference the tutorial module 8, last lesson for output usage.</b><br>
+              An "event emitter is used to create an event in Angular. </p>
+        
+              <h4 id="ng-services">Services</h4>
+              <><b>Services:</b> are classes with focused purposes that don't belong to any particular component. It's used for features or logic that don't require any specific component but may be shared across the app.<br>
+              Singleton is a single instance of a service.<br>
+              The "injector" manages all the instances of services.<br>
+              A database can be linked to a service.<br>
+              <b>Dependency injection:</b> is when the injector sends a service it's holding to a component. Another definition is Dependency Injection is a coding pattern in which a class receives the instances of objects it needs (Dependencies) from an external source rather than creating them itself.<br>
+              The services syntax is the same as components and pipes: <br> <img src="Images/services syntax.png" class ="in-line-image" alt=""></p>
+              <p>Root Injectors act just like root modules in that they hold the injectors that are used across the app. Any other injector is specific to the component it's made for.</p> <img src="Images/Angular injectors.png" class ="in-line-image" alt=""> <img src="Images/registering a service.png" class ="in-line-image" alt="">
+              <p>To make the service the root service (essentially bootstrapping it as the root), you add <span>providedIn: 'root'</span> within the decorator brackets as follows:</p><br> <img src="Images/injector bootstrapping basically.png" class ="in-line-image" alt="">
+              <p><span>providers: [ProductService]</span> is used to add a service specifically to a component. This is put into the component decorator, where template, styles etc are declared.<br>
+              Tree shaking is when Angular compiler shakes out unused code for smaller deployed bundles.  </p>
+              <p>Dependency injection is done using the constructor. Components have constructors that are implicit so we don't normally define them but to use the dependency injection, we need to make explicit constructors functions. The syntax is thus:</p>
+              <p><b>Injecting a service</b></p>
+              <div class="frame">
+                <code> 
+                  <p><span>import</span> { Service } from './location';</p>
+                  <p> <span>@component</span> ({<br>
+                    &nbsp;&nbsp;selector: 'pm-products', <br>
+                    &nbsp;&nbsp;templateUrl: './product-list.component.html' <br>
+                  }) </p> <br>
+                  <p><span>export class</span> ProductListComponent { <br>
+                    &nbsp;&nbsp;<br>
+                    &nbsp;&nbsp;constructor(<span>private</span> productService: ProductService) {<br>
+                      &nbsp;&nbsp;} <br>
+                    &nbsp;&nbsp;<br>
+                  }</p>
+                </code>
+                <!-- &nbsp; is used to add spaces between words also &ensp;-->
+               </div>
+               <p>The constructor function should have as little code as possible since it's ran on startup. <br> 
+                This injecting part was definitely not clear so reference the <a href="https://app.pluralsight.com/course-player?clipId=84d79c8c-11b7-402e-a33c-6362f6a55043">second to last video of module 9</a>  for help.</p>
+                <p><b>Reactive extensions:</b> is a library for composing data using observable sequences and transforming data using operators.</p>
+                <p>Synchronus means real-time responses (like with a phone call), where one sends the request and the other responds immediately.<br>
+                  Asynchronus means responses at later time (like emails), where one sends the request and the other continues what it was doing then receives and responds at a later time. <br>
+                Http requests are asynchronus. Requests are sent using http. Notifying app that request iscompleted is done with reactive extensions (RxJS) <br>
+              RxJS observable sequences notify angular when an asynchronus request has been responded to. </p>
+              <p>An <b>observable</b> is an array of fleeting events that occur over time. It notifies angular when one of these events happens and ushers in the next event in the array. If an error occurs, it provides the error notification. It also notifies complete when all events are completed. Observables essentially read parameters as they change. <br>
+                 You have to 'subscribe' to an observable to use it tho. It gives next, error or complete notifs. <br>
+                Use observable functions to create observables.<br>
+                Observables are conventionally written with <span>observable$</span> where the $ denotes its an observable for recognition. <br>
+                Htp.get returns an observable.
+                </p> <br> <img src="Images/http getting data.png" class="in-line-image" alt=""> <br> <img src="Images/how http works.png" class="in-line-image" alt=""> 
+                 <p><b>Operators</b> are used to map, filter, combine, transform data. You 'pipe' items through operators to transform them. <br>
+                  The pipe method is used to pipe items through operators.Here's the syntax: </p> <br> <img src="Images/observable piping syntax.png" class="in-line-image" alt=""> <br>
+                  <p>Strong typing in a function may require a return value.</p>
+                  <p> <a href="https://app.pluralsight.com/course-player?clipId=999618ab-1c7a-425d-86d0-464a9bb46df2">Module 10 lesson 5</a>  shows how to link to a back end. #Integrations</p>
+                  <p>The right way to use Http is to encapsulate it in a service, then expose an observable for use by any component that needs product data. The component simply subscribes to the variable then at a later point in time gets the data (or notification).</p>
+                  <p><b>Before you can use http client service,</b> <br>
+                  1.) Ensure the service provider is registered with the angular injector. Since this is done in the HttpClientModule, just import it to the @NgModule <br>
+                  2.) Http requests are put in the service component. There (in the constructor part of it), define a dependency for the Http Client Service. <br>
+                  3.) Then create a method for each http request. In the method call the desired http method (eg get). <br>
+                  4.) Put the url to the desired server (database/backend link). <br>
+                  5.) Use generics to specify the response return type, transforming the raw http response to the specified type. <br>
+                  6.) Add error handling using the catchError operator. <br>
+                  7.) In any component that needs data from a service, call the subscribe method to subscribe to the observable. <br>
+                  8.) Provide a function to handle an emitted item. This assigns a property to the return data. If the property is bound to a template, the retrieved data appears in the view. <br>
+                  9.) Add an error function to handle any returned errors. <br>
+                  10.) Next you wanna unsubscribe: store the subscription in a variable, implement the OnDestroy lifecycle hook, use the subscription variable in the OnDestroy method to unsubscribe.</p>
+                  <p>For refreshment of integrations, check <a href="https://app.pluralsight.com/course-player?clipId=999618ab-1c7a-425d-86d0-464a9bb46df2">module 10 video 5</a> </p>
+
+                  <h4 id="ng-routing" >Routing</h4>
+                  <p><b>Routing:</b> is pathing from a page to another in response to a user action. Eg, button click. So on clicking the button, the link in the button as usual goes to the browser bar, then Angular looks for the path the keyword in the router link specifies.<br>
+                  <strong><code>&lt;router-outlet&gt;</code></strong><strong><code>&lt;/router-outlet&gt;</code></strong> is used where the route is meant to appear. <br>
+                  Routing is component based so for each component, specify a route.<br>
+                  You have to import (and declare) the RouterModule to access the routing services.<br>
+                  RouterModule also exposes the routes you configure to the application when you pass the routes to the router module using the .forRoot method <span>.forRoot([])</span></p>
+                  <p><b>Routing Syntax</b></p>
+                  <div class="frame">
+                    <code> 
+                      <p><span>.forRoot</span>([<br>
+                        &nbsp;&nbsp;{ path: 'routerLinkKeyWord', component: NamedComponent }, <br>
+                        &nbsp;&nbsp;{ path: 'products/:id', component: ProductDetailComponent }, <br>
+                        &nbsp;&nbsp;{ path: 'myPage', component: MyPageComponent }, <br>
+                        &nbsp;&nbsp;{ path: ' ', redirectTo: 'welcome', pathMatch: 'full' }, <br>
+                        &nbsp;&nbsp;{ path: '**', component: PageNotFoundComponent }, <br>
+                        ])</p>
+                    </code>
+                    <!-- &nbsp; is used to add spaces between words also &ensp;-->
+                   </div>
+                   <p><b>Append this whole syntax to the RouterModule declaration to add the routes.</b><br>
+                    /:id is appended to the link to know which exact product's details to display. ** is useful for displaying a 404 not found page.<br>
+                    In routing, the order matters. The top routes take priority, i.e it picks the first template that matches the link.<br>
+                    You need <span>&lt;base href="/"&gt;</span> in the head of your index.html to tell it how to compose navigation Urls.</p>
+                    <p><span>&lt;li>&lt;a class="nav-link" routerLink ='/welcome'>Home&lt;/a>&lt;/li></span>  &ensp;&ensp; OR when there's a route id, its as follows:<br>
+                      <span>&lt;li>&lt;a class="nav-link" [routerLink] ="['/welcome']">Home&lt;/a>&lt;/li></span></p>
+                    <p>When there's no route parameter (route id), you don't need [] in your routing link (routerLink). <br>
+                    Once routed, you tell it where to actually display the view it's gotten by using the <strong><code>&lt;router-outlet&gt;</code></strong><strong><code>&lt;/router-outlet&gt;</code></strong> directive.<br>
+                    When the app launches, the default route is first activated.</p>
+                    <p>The <b>route</b> calls a <b>component</b> and the <b>component</b> calls its <b>html from a url</b> (mostly) to finally display that html where <b>&lt;router-outlet></b> is positioned.</p> <br>
+                    <img src="Images/Routing vs nesting usecase.png" class="in-line-image" alt=""> <i>routing vs nesting when</i> <br>
+                    <p>In a nutshell, to route, you configure routes (in @NgModule), add routes to relevant links (as an attribute to links), display route (using &lt;router-outlet&gt;) </p> <br>
+                    <p>Snapshot means read a parameter one time. The snapshot gives us parameter information at a single point in time. Synatx: <span>this.route.snapshpt.paramMap.get('id');</span> <br>
+                    It's used when the route doesn't change while displaying the component.If the parameter would keep changing, use <span>this.route.paramMap.subscribe(params => console.log(params.get('id')));</span> If the route parameters keep changing say, as the products flash across the carousel, then we subscribe to an observable to notify angular every time the route changes.<br>
+                    The activated route service (from RouterModule) gives Angular information on the state of the route.</p>
+                    <p><b>Safe navigation operator</b> is a ? tag to return 'null' in case the property can't be found. It only navigates to the properties of an object if that object has a value that's not null or undefined. Syntax <span>{{products?.productName}}</span> It won't access the productName unless the products property has a valid value.</p>
+                    <p><b>Routing With Code</b><br>
+                    You can route using a routerLink directive in a template (usuall an a tag), or with code. When would you want to route with code?<br>
+                    One instance is a 'save button' where you need to save the data then route.<br>
+                    This is done using the Router service (not ActivatedRoute service now). Routing details like these are put into the constructor. </p><img src="Images/routing with code.png" class="in-line-image" alt=""> <i>routing with code</i><br>
+                    It basically involves importing the router (router is used for routing), creating a navigate method, then adding that method to the template.
+                    <p>Protecting Routes with Guards:<br>
+                    Guards are used to control who can access what page when. By <br>
+                    CanActivate (guard navigation to a route) <br>
+                    CanDeactivate (navigating away from a route) <br>
+                    Pre-fetch (resolve data before activating a route)<br>
+                     CanLoad (to prevent asynchronus routing)<br>
+                    Any of these guard types can be used, just put the one you wanna use after 'implements' after the class name. Then code the method inside the class's{}. It often returns a boolean value, true to activate the route and false to cancel</p> <img src="Images/Guards syntax.png" class="in-line-image" alt=""><i>Guards syntax</i>
+                    <p>When you implement a guard, first generate it, edit its behavior then hook it up to what it's guarding.</p> <img src="Images/Using guards.png" class="in-line-image" alt=""> <i>Using guards flow</i> 
+                    <br>
+      <h4 id="ng-potential">Potential</h4>
+      <p>There are the things I noticed you can do with Angular (<i>useful to note so when I've forgotten how to do them, I know it can be done and can go to google or back to the tutorial</i>)<br>
+      1.) Make pre-defined logic or dataType sets and call it up later (like reflationLogic) <br>
+      2.) Angular can make (build and validate) special forms and reactive forms.
+      </p>
+
+      <h4 id="ng-cli">Angular CLI Commands</h4>
+
+      <table class="table table-dark table-sm">
+        <thead>
+          <tr>
+            <th scope="col" style="width: 20px">#</th>
+            <th scope="col">Command</th>
+            <th scope="col">Meaning</th>
+      
+          </tr>
+        </thead>
+        <tbody>
+          <!-- <tr>
+            <th scope="row">num</th>
+            <td>Thornton</td>
+            <td>Thornton</td>
+          </tr>-->
+          <tr>
+            <th scope="row">Stx</th>
+            <td>ng g c componentPath/name-surname --extra</td>
+            <td>E.g of extra are --flat --prefix etc</td>
+          </tr>
+
+          <tr>
+            <th scope="row">1</th>
+            <td>npm install</td>
+            <td>installs packages</td>
+      
+          </tr>
+          <tr>
+            <th scope="row">2</th>
+            <td>npm start</td>
+            <td>runs the app, given you're in its vs code terminal.</td>
+      
+          </tr>
+          <tr>
+            <th scope="row">3</th>
+            <td>ng new name-surname --prefix pf </td>
+            <td>creates a new file called name-surname. The prefix is what the selector would be e.g &lt;pf-root&gt;</td>
+      
+          </tr>
+
+          <tr>
+            <th scope="row">4</th>
+            <td>ng g cl</td>
+            <td>generates a class</td>
+          </tr>
+
+          <tr>
+            <th scope="row">5</th>
+            <td>ng g c</td>
+            <td>generates a component</td>
+          </tr>
+
+          <tr>
+            <th scope="row">6</th>
+            <td>ng g d</td>
+            <td>generates a directive</td>
+          </tr>
+
+          <tr>
+            <th scope="row">7</th>
+            <td>ng g e</td>
+            <td>generates an enum</td>
+          </tr>
+
+          <tr>
+            <th scope="row">7</th>
+            <td>ng g g</td>
+            <td>generates a guard</td>
+          </tr>
+
+          <tr>
+            <th scope="row">8</th>
+            <td>ng g i</td>
+            <td>generates an interface</td>
+          </tr>
+
+          <tr>
+            <th scope="row">9</th>
+            <td>ng g m</td>
+            <td>generates a module</td>
+          </tr>
+
+          <tr>
+            <th scope="row">10</th>
+            <td>ng g p</td>
+            <td>generates a pipe</td>
+          </tr>
+
+          <tr>
+            <th scope="row">11</th>
+            <td>ng g s</td>
+            <td>generates a service</td>
+          </tr>
+
+          <tr>
+            <th scope="row">12</th>
+            <td>ng new</td>
+            <td>creates a new app</td>
+          </tr>
+
+          <tr>
+            <th scope="row">13</th>
+            <td>ng serve</td>
+            <td>builds the app and launches a server</td>
+          </tr>
+
+          <tr>
+            <th scope="row">13</th>
+            <td>ng generate</td>
+            <td>generates code</td>
+          </tr>
+
+          <tr>
+            <th scope="row">15</th>
+            <td>ng add</td>
+            <td>adds support for an external library to the app</td>
+          </tr>
+
+          <tr>
+            <th scope="row">16</th>
+            <td>ng test</td>
+            <td>runs unit tests</td>
+          </tr>
+
+          <tr>
+            <th scope="row">17</th>
+            <td>ng e2e</td>
+            <td>runs end-to-end tests &ensp;&ensp; ( <span>needs an external package</span> )</td>
+          </tr>
+
+          <tr>
+            <th scope="row">18</th>
+            <td>ng build</td>
+            <td>compiles into an output directory</td>
+          </tr>
+          <tr>
+            <th scope="row">19</th>
+            <td>ng deploy</td>
+            <td>deploys the application to a web server &ensp;&ensp; ( <span>needs an external package</span> )</td>
+          </tr>
+          <tr>
+            <th scope="row">20</th>
+            <td>ng update</td>
+            <td>updates the Angular version for the app</td>
+          </tr>
+          <tr>
+            <th scope="row">21</th>
+            <td>ng help</td>
+            <td>displays available commands</td>
+          </tr>
+          <tr>
+            <th scope="row">22</th>
+            <td>ng g m folder/name -m moduleName </td>
+            <td>generates module AND imports it to AppModule where -m ='add to array'</td>
+          </tr>
+          <tr>
+            <th scope="row">23</th>
+            <td>ng g m folder/name --route folder/name --module app.module </td>
+            <td>generates module 'name' AND routes it to app.module </td>
+          </tr>
+
+        </tbody>
+        <tfoot>
+          <tr>
+            <td>#</td>
+            <td colspan="2" style="text-align: center;">That's all for now folks</td>
+            
+          </tr>
+        </tfoot>
+      </table>
+<br>
+      <p><b>Things you can do with Angular cli</b><br>
+        Generate a component with cli --- <span>ng g c componentPath/name-surname</span> where g= generate c= component. When you don't want a new folder made with the generation, use <span>ng g c componentPath/name-surname --flat</span><br>
+      Using the cli auto declares and imports the generated component in its parent module. Cool!<br>
+      Generate a guard: <span> ng g g guardPath/name</span><br>
+      Generate module AND import it to AppModule: <span>ng g m folder/name -m moduleName</span> where -m ='add to array'</p>
+      <p>Angular.json is a file that configures the local cli commands of the app.<br>
+      ng serve -o was predefined to open it in default browser in the package.json file. That's smart and should be used more.</p>
+
+
+
+
+
+
+
+
+          </div>
+        </div>
+      </div>
+    
+    </div>
+
+    <hr size="5" noshade>
+    
+
+      
+
+
+
+
+
+      <!-- NOTE END KINDA   NOTE END KINDA    NOTE END KINDA    NOTE END KINDA    NOTE END KINDA -->
+
+
+
+
+
+
+      
+      
+      <h4>Commands</h4>
+      <p>"dir" shows the directory of files in the current folder you're in, in the terminal</br>
+      "code ." opens the project in vs code when you're in it's terminal folder</br></p>
+      <p><b>Kill a Port:</b><span> sudo lsof -i :4200</span> (or whatever port is running) You may not need to use sudo. When you have the PID (number showin after node), run <span>kill -9 24922</span> assuming 24922 as the PID. Use your own PID.</p>
+      
+
+
+
+      <!--             Bottom Controls       -->
+    <div class="control-frame" id="control-frame-angular" onclick="showOrHide()">              
+      <ul>
+        <li><a href="#ng-theory">Theory</a></li>
+        <li><a href="#ng-tips">Tips</a></li>
+        <li><a href="#ng-components">Component syntax</a></li>
+        <li><a href="#ng-renames">Rename glossary</a></li>
+        <li><a href="#ng-bindings">Bindings</a></li>
+        <li><a href="#ng-pipes">Pipes</a></li>
+        <li><a href="#ng-interpolation">Interpolation</a></li>
+        <li><a href="#ng-for-if">ngFor ngIf</a></li>
+        <li><a href="#ng-interfaces">Interfaces</a></li>
+        <li><a href="#ng-lifecycle-hooks">Lifecycle hooks</a></li>
+        <li><a href="#ng-backing-variables">Backing variables</a></li>
+        <li><a href="#ng-gettersnsetters">Getters & setters</a></li>
+        <li><a href="#ng-nesting">Nesting components</a></li>
+        <li><a href="#ng-services">Services</a></li>
+        <li><a href="#ng-routing">Routing</a></li>
+        <li><a href="#ng-tips">iii</a></li>
+        <li><a href="#ng-potential">Potential</a></li>
+        <li><a href="#ng-cli">Cli commands</a></li>
+
+      </ul>
+      </div>
+      <div class="control-button" id="cntrl-btn-angular">
+        <b>-</b>
+      </div>
+
+    <!-- THIRD SECTION -->
+
+
+  </section>
+
+  <section class="third-section">
+
+  <p>The notes of Femi</p>
+
+  </section>
+
+  <!-- BOOTSTRAP JAVASCRIPT -->
+  <script src="js/codeplaybook script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+  
+  <!-- NOTHING UNDER HERE -->
+  </body>
+</html>

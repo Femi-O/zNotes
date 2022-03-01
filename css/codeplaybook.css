@@ -1,0 +1,176 @@
+span{
+  color: #54acac;
+}
+hr {
+  border-style: dotted none none;
+  border-color: #EAF6F6;
+  border-width: 5px;
+  width: 5%;
+  margin: 100px auto;
+}
+/* SPEECH BUBBLE */
+.bubble {
+	height: 125px;
+	width: 40%;
+	min-width: 200px;
+	background: ivory;
+	display: block;
+	margin: 0 auto;
+	border-radius: 20px;
+	margin-top: 50px;
+	font-size: 20px;
+	text-align: left;
+	box-shadow: 0 0 10px 5px grey; 
+    /* OVERFLOW BELOW MAKES IT SCROLL */
+    overflow-x: auto;
+    overflow-y: auto;
+}
+/* SPEECH BUBBLE TAIL */
+.pointer {
+	height: 20px;
+	width: 40px;
+	background: ivory;
+	margin: 0 auto;
+	box-shadow:  0 5px 5px grey; 
+	border-radius: 0 0 82px 0;
+	margin-top: -22px;
+	position: relative;
+	right: 60px; top: 20px;
+}
+
+/* css contd */
+/* This removes that annoying Bootstrap click blue border!! */
+.btn-check:focus+.btn-primary, .btn-primary:focus {
+  box-shadow: none;
+}
+
+.navbar-control{
+  background-color: #F8F8F8;
+  color: #747474;
+  border: 3px solid #F8F8F8;
+  font-size:larger;
+  border-radius: 10px;
+  outline: none !important;
+}
+.navbar-control:hover {
+  background-color: rgb(247, 207, 156);
+  border: 3px solid rgb(255, 234, 207);
+  font-size:larger;
+  border-radius: 10px;
+}
+.navbar-control:focus {
+  background-color: rgb(247, 207, 156);
+  border: 3px solid rgb(255, 234, 207);
+  font-size:larger;
+  border-radius: 10px;
+}
+.second-section{
+  padding: 1rem 6rem;
+  background-color: #f2e8d0;
+}
+.btn{
+  background-color: burlywood;
+  width: 100%;
+  border: 3px solid rgb(196, 157, 106);
+  border-radius: 20px;
+}
+.btn:hover, .btn:focus{
+  background-color: rgb(247, 207, 156);
+  border: 3px solid rgb(255, 234, 207);
+}
+/* .collapse-button:focus{
+  background-color: rgb(247, 207, 156);
+  border: 3px solid rgb(255, 234, 207);
+} */
+.card-body{
+  background-color: #f2e8d0;
+  width: 100%;
+  padding: 0;
+}
+.third-section{
+  text-align: center;
+  font-size: 10;
+  margin: auto;
+}
+.comparatives{
+  background-color: #fad696;
+}
+.first-heading{
+  padding-top: 2rem;
+}
+.in-line-image{
+  width: 60%;
+}
+.frame{
+  width: auto;
+  min-height: fit-content;
+  margin-right: 40%;
+  border: 2px solid;
+  border-left: 6px solid #005282;
+  padding: 1rem;
+  background-color: azure;
+  /* OVERFLOW BELOW MAKES IT SCROLL */
+  overflow-x: auto;
+  overflow-y: auto;
+}
+#back-to-top-btn{
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  display: inline;
+  background-color: grey;
+  border-radius: 50px;
+  opacity: 0.2;
+  font-size: 40px;
+  padding: 0 5px 0;
+  color: white;
+  cursor: pointer;
+}
+#frame{
+  width: 40%;
+  min-height: fit-content;
+  margin-right: 40%;
+  border: 2px solid;
+  border-left: 6px solid #005282;
+  padding: 1rem;
+  background-color: azure;
+  /* OVERFLOW BELOW MAKES IT SCROLL */
+  overflow-x: auto;
+  overflow-y: auto;
+}
+.control-frame{
+  width: 90px;
+  height: 240px;
+  margin-right: 40%;
+  border: 2px solid;
+  border-left: 6px solid #005282;
+  border-radius: 20px;
+  padding: 1rem 1rem 1rem 0;
+  background-color: azure;
+  /* OVERFLOW BELOW MAKES IT SCROLL */
+  overflow-x: auto;
+  overflow-y: auto;
+  /* The Positioning */
+  position: fixed;
+  bottom: 50px;
+  left: 0.5px;
+  opacity: 100%;
+  display: none;
+}
+.control-button{
+  background-color: rgb(177, 177, 177);
+  color: #EAF6F6;
+  width: 60px;
+  height: 30px;
+  border-radius: 50px;
+  text-align: center;
+  cursor: pointer;
+  opacity: 80%;
+  /* The Positioning */
+  position: fixed;
+  bottom: 20px;
+  left: 10px;
+}
+.control-button:hover {
+  background-color: #70d4db;
+}
