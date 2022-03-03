@@ -54,6 +54,9 @@
           <li class="nav-item">
             <a class="nav-link" href="#angular">Angular</a>
           </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#git">Git</a>
+          </li>
         </ul>
       </div>
     </nav>
@@ -471,8 +474,10 @@
                    <img src="Images/import syntax.png" class ="in-line-image" alt=""> <br>
                    You're telling Angular where to find that 'component decorator' function. THIS SHYTE IS CASE SENSITIVE!
         
-        
-                <p>Everything you 'declare' in a file must first be imported before it'll work and vice versa. <B>In a module, you must declare the components before it can hold them.</B> Here's the module format:</p> 
+                <h4>App Modules</h4>
+                <p>The app module (app.module.ts) holds all other modules in the app, and holds its own components (app.component.ts). <br>
+                  When a module is imported (under "imports") here, it becomes accessible to the app. </p>
+                <p>Everything you 'declare' must also be imported before it'll work and vice versa. <B>In a module, you must declare the components and import other modules before it can hold them.</B> Here's the module format:</p> 
                 <img src="Images/Angular module format.png" class ="in-line-image" alt=""><br> 
                 <img src="Images/Angular Modules more.png" class="in-line-image" alt=""> 
                 <p>Using the 'selector' of a component, you can then fix the component into another component, say like as a child.</p>
@@ -654,6 +659,7 @@
                   <div class="frame">
                     <code> 
                       <p><span>.forRoot</span>([<br>
+                        &nbsp;&nbsp;{ path: 'new', component: NewComponent }, <br>
                         &nbsp;&nbsp;{ path: 'routerLinkKeyWord', component: NamedComponent }, <br>
                         &nbsp;&nbsp;{ path: 'products/:id', component: ProductDetailComponent }, <br>
                         &nbsp;&nbsp;{ path: 'myPage', component: MyPageComponent }, <br>
@@ -663,7 +669,14 @@
                     </code>
                     <!-- &nbsp; is used to add spaces between words also &ensp;-->
                    </div>
-                   <p><b>Append this whole syntax to the RouterModule declaration to add the routes.</b><br>
+                   <p>
+                    <b>Routing is as simple as: 
+                      <ol>
+                      <li>creating a component </li> 
+                      <li> declaring/importing it in parent module </b>(<i>modules hold children components so that's where all relevant components are declared/imported</i>) </li>
+                      <b><li> importing that module to the root AppModule (under imports) </li>
+                      <li> adding a link for it to display where the router-outlet is.</li>
+                      </ol></b>
                     /:id is appended to the link to know which exact product's details to display. ** is useful for displaying a 404 not found page.<br>
                     In routing, the order matters. The top routes take priority, i.e it picks the first template that matches the link.<br>
                     You need <span>&lt;base href="/"&gt;</span> in the head of your index.html to tell it how to compose navigation Urls.</p>
@@ -853,8 +866,9 @@
           </tr>
           <tr>
             <th scope="row">22</th>
-            <td>ng g m folder/name -m moduleName </td>
-            <td>generates module AND imports it to AppModule where -m ='add to array'</td>
+            <td>ng g m folderN </td>
+            <td>generates relevant module in folderN AND imports it to AppModule </td>
+            <!-- ng g m folder/name -m moduleName   	generates module AND imports it to AppModule where -m ='add to array' -->
           </tr>
           <tr>
             <th scope="row">23</th>
@@ -894,6 +908,274 @@
     </div>
 
     <hr size="5" noshade>
+
+    <h1> <a class="btn btn-primary" data-bs-toggle="collapse" href="#tipsSection" role="button" aria-expanded="false" aria-controls="multiCollapseExample1">Git</a></h1>
+  
+    <div class="row">
+      <div class="col">
+        <div class="collapse multi-collapse" id="tipsSection">
+          <div class="card card-body">
+            <center>
+              <h1 style="font-size:40px;" id="git">
+                GIT</h1></center>
+
+                <div style="word-wrap: break-word; -webkit-nbsp-mode: space; line-break: after-white-space;">
+                  
+                    <img src="Images/Git syntax and controls.png" class="centered-image" alt="">
+                
+                      </div>
+                      <div><br></div>
+                      <div><b><u>STEPS FOR LOCAL REPOSITORY</u></b></div>
+                      <div>So to actually use git for versioning,&nbsp;</div>
+                    <ol>
+                      <li>&nbsp;<b>cd</b>&nbsp;to where your work is</li>
+                      <li> create a repo using ‘<b>git init</b>’</li>
+                      <li> Use ‘<b>git status</b>’ to see what’s in the staging area</li>
+                      <li> use ‘<b>git add fileName</b>’ to add to staging area. ‘<b>Git add .</b>’ To add all files</li>
+                      <li> commit it using ‘<b>git commit -m “my message about this version</b>”’</li>
+                      <li> use ‘<b>git log</b>’ to check that it’s been committed</li>
+                      <li> after working on a file use ‘<b>git status</b>’ to show which has been modified since last commit.</li>
+                      <li> ‘<b>git diff fileName</b>’ to check the difference between versions</li>
+                      <li> use ‘<b>git checkout</b>’ to revert to a previous version.&nbsp;</li>
+                    </ol>
+                      <div><br></div>
+                      <div><b><u>STEPS FOR REMOTE REPO</u></b></div>
+                    <ol>
+                      <li> create repository using GitHub</li>
+                      <li> copy it’s link</li>
+                      <li> use ‘<b>git remote add origin pasteLink</b>’(Now that it’s been targeted, you can push the local repository to it)</li>
+                      <li> use ‘<b>git push -u origin master</b>’&nbsp; <br>
+                        <i>Where origin is the name of the remote and master is the name of the branch. This pushes local to remote
+                        repo using the u option</i>.&nbsp; <br>
+                        .git is the local repo then use ‘git push’ to send it to the remote repository.&nbsp;</li>
+                    </ol>
+                      
+                      <div><br></div>
+                      <div><b><u>STEPS FOR BRANCHING</u></b></div>
+                    <ol>
+                      <li> create branch ‘<b>git branch side-story</b>’</li>
+                      <li> ‘<b>git branch</b>’ to check branches (*shows current branch)</li>
+                      <li> ‘<b>git checkout side-story</b>’ to switch to the side story branch.&nbsp; (Switched branch, make your changes.&nbsp;</li>
+                      <li> add new files to local repo ‘<b>git add .</b>’&nbsp;</li>
+                      <li> commit them to staging area ‘<b>git commit -m note</b>’ (This uploads the files to the new branch which you’re on)</li>
+                      <li> use ‘<b>git branch</b>’ to confirm where you are.</li>
+                      <li> go back to the master branch using ‘<b>git checkout master</b>’.</li>
+                      <li> when you git log, you’ll see the latest commit to the remote and local repositories.&nbsp;</li>
+                    </ol>
+                      <div><br></div>
+                      <div><b><u>STEPS FOR MERGING BRANCHES</u></b></div>
+                    <ol>
+                      <li> go back to master branch&nbsp;</li>
+                      <li> use ‘<b>git merge branchNameToMerge</b>’</li>
+                      <li> a message log would open use&nbsp;<b>:q!</b>&nbsp;to escape it.&nbsp;</li>
+                      <li> push it to the origin master branch using ‘<b>git push origin master -u</b>’</li>
+                  </ol>
+                      <div><br></div>
+                      <div><br></div>
+                      <div><b><u>FINAL NOTES</u></b></div>
+                      <div>When you understand these things and the way they work, you can follow the UI of GitHub to do it instead of
+                          cli.&nbsp;</div>
+                      <div><br></div>
+                      <div>Cloning clones to your local files and you can work with that. Forking clones to your GitHub repository as
+                          though you’re the account &nbsp;who pushed these files online.&nbsp;</div>
+                      <div><br></div>
+                      <div>So you can use GitHub as version control for your own projects, then for collaboration.</div>
+                      <div><br></div>
+                      <div><br></div>
+                      <div>
+                          <div><b><u>RANDOM COMMANDS</u></b></div>
+                          <table class="table table-dark table-sm">
+                            <thead>
+                              <tr>
+                                <th scope="col" style="width: 20px">#</th>
+                                <th scope="col">Command</th>
+                                <th scope="col">Meaning</th>
+                          
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <!-- <tr>
+                                <th scope="row">num</th>
+                                <td>Thornton</td>
+                                <td>Thornton</td>
+                              </tr>-->
+                              <tr>
+                                <th scope="row"> </th>
+                                <td> </td>
+                                <td> </td>
+                              </tr>
+                    
+                              <tr>
+                                <th scope="row">1</th>
+                                <td>Mkdir file </td>
+                                <td>create folder/directory</td>
+                          
+                              </tr>
+                              <tr>
+                                <th scope="row">2</th>
+                                <td>Touch filename.txt</td>
+                                <td>creates file</td>
+                          
+                              </tr>
+                              <tr>
+                                <th scope="row">3</th>
+                                <td>Open filename.txt</td>
+                                <td>opens with default</td>
+                          
+                              </tr>
+                    
+                              <tr>
+                                <th scope="row">4</th>
+                                <td>Git init </td>
+                                <td>initializes git in a certain directory. That .git repository would be used to commit your changes and do version control. </td>
+                              </tr>
+
+                              <tr>
+                                <th scope="row">5</th>
+                                <td>Git status</td>
+                                <td>shows what’s in or staging area not/td>
+                              </tr>
+                    
+                              <tr>
+                                <th scope="row">6</th>
+                                <td>Git add</td>
+                                <td>adds to staging area</td>
+                              </tr>
+                    
+                              <tr>
+                                <th scope="row">7</th>
+                                <td>Git add . </td>
+                                <td>Adds while directory</td>
+                              </tr>
+
+                              <tr>
+                                <th scope="row">8</th>
+                                <td>Git commit -m Notes in present tense</td>
+                                <td>adds it to the local repository</td>
+                              </tr>
+
+                              <tr>
+                                <th scope="row">9</th>
+                                <td>Git diff filename</td>
+                                <td>shows in red what was changed since previous version and in green what was added in current version</td>
+                              </tr>
+
+                              <tr>
+                                <th scope="row">10</th>
+                                <td>Git checkout filename </td>
+                                <td>takes you to previous version</td>
+                              </tr>
+
+                              <tr>
+                                <th scope="row">11</th>
+                                <td>Git log </td>
+                                <td>shows logged commits, HEAD is the current/td>
+                              </tr>
+
+                              <tr>
+                                <th scope="row">12</th>
+                                <td>Git branch</td>
+                                <td>checks out your branches</td>
+                              </tr>
+                              <tr>
+                                <th scope="row">13</th>
+                                <td>Git checkout alien-plot</td>
+                                <td>switches to alien-plot</td>
+                              </tr>
+                              <tr>
+                                <th scope="row">14</th>
+                                <td>Git branch -a </td>
+                                <td>checks the content of a branch</td>
+                              </tr>
+
+                              <tr>
+                                <th scope="row">15</th>
+                                <td>Git branch branchName</td>
+                                <td>go to branchName</td>
+                              </tr>
+                              <tr>
+                                
+                              <tr>
+                                <th scope="row">16</th>
+                                <td>Git push -u origin master </td>
+                                <td>pushes local to remote repository from ‘origin’ remote to ‘master’ branch</td>
+                              </tr>
+
+                              <tr>
+                                <th scope="row">17</th>
+                                <td>Git remote add origin url/remote/repository</td>
+                                <td>links it to remote repository. origin is the name of the remote conventionally</td>
+                              </tr>
+                    
+                              <tr>
+                                <th scope="row">18</th>
+                                <td>Ls</td>
+                                <td>shows files</td>
+                              </tr>
+                    
+                              <tr>
+                                <th scope="row">19</th>
+                                <td>Ls -a</td>
+                                <td>shows hidden files</td>
+                              </tr>
+
+                              <tr>
+                                <th scope="row">20</th>
+                                <td>Touch .gitignore </td>
+                                <td>create a hidden file. Add files to be ignored by git  here</td>
+                              </tr>
+                    
+                              <tr>
+                                <th scope="row">21</th>
+                                <td>Git rm —cached -r . </td>
+                                <td>Removes all committed files from repository</td>
+                              </tr>
+                    
+                              <tr>
+                                <th scope="row">22</th>
+                                <td>Git clone url </td>
+                                <td>downloads remote files to computer</td>
+                              </tr>
+                              
+                              <tr>
+                                <th scope="row">23</th>
+                                <td>uhn</td>
+                                <td>uhn</td>
+                              </tr>
+                    
+                            </tbody>
+                            <tfoot>
+                              <tr>
+                                <td>#</td>
+                                <td colspan="2" style="text-align: center;">That's all for now folks</td>
+                                
+                              </tr>
+                            </tfoot>
+                          </table>
+                      </div>
+                      <h4>THEORY</h4>
+                      <div>
+                          <div><b>Working directory</b>- folder you’re working in&nbsp;<br></div>
+                          <div><b>Staging area</b>- intermediate place you can keep files b4 versioning.&nbsp;</div>
+                      </div>
+                      <div><br></div>
+                      <div>
+                          <div>The network tab shows the progress of your versions over time. &nbsp;</div>
+                          <div><b>Master branch</b>- main line of saves.<br>
+                            Only things that work fine should make it to the masterbranch.</div>
+                          <div>DS _Store files-&nbsp;</div>
+                          <div>Any file you want git to ignore specify it on a new line in gitignore file. You can use a wildcard (*.txt) stating all files with a certain extension be ignored.&nbsp;</div>
+                          <div><B>Forking</B> - cloning open source resource to your remote repository.&nbsp;</div>
+                          <div><b>Pull</b> request is sending your code to a repository owner for them to pull it as the new main code.&nbsp;
+                          </div>
+                      <div><br>
+                      </div>
+                    </div>
+          </div>
+        </div>
+      </div>
+    
+    </div>
     
 
       
