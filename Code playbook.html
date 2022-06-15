@@ -60,6 +60,10 @@
           <li class="nav-item">
             <a class="nav-link" href="#git">Git</a>
           </li>
+          <li class="nav-item">
+            <a class="nav-link" href="Integrations.html">Integrations</a>
+          </li>
+          
         </ul>
       </div>
     </nav>
@@ -368,6 +372,7 @@
            
     <h1 style="font-size:40px;" id="javascript">
       JAVASCRIPT</h1>
+      <img src="Images/JS definition.png" class ="in-line-image" alt="">
     <p><i>A best practive is to write the pseudocode in order as comments then the actual code to impliment each pseudo comment under it so when it runs they all run together, ignoring the comments.If need be, steps can be further broken down.</i></p>
     <p>The syntax is <span>alert("uhhn");</span> then for variables it's <span>var= myName;</span> <br>Remember ; is the sentence fullstop. </p>
     <p>Remember the script would playout in the order that you wrote it, so be sure to define variables before they're called up when scripting. Chronology is so key that a variable can return a different value depending on changes its gone through in the Chronology.</p>
@@ -541,6 +546,7 @@
                     <li>ActivatedRouteSnapshot = stores info on a route at any time stamp</li>
                     <li>private = only accessible by stuff in the same module</li>
                     <li>lazy loading = load home first, others asynchronously for speed.</li>
+                    <li>ternary operator = short if statement</li>
                   </ul>
                 </div>
                 <p id="ng-bindings" ><b>Data binding</b> coordinates communication between a template and its class. 
@@ -680,6 +686,9 @@
                       <b><li> importing that module to the root AppModule (under imports) </li>
                       <li> adding a link for it to display where the router-outlet is.</li>
                       </ol></b>
+                      <p><b>Routing Using the CLI:</b></p>
+                      <p>The cli command <span>ng g m notes --route notes --module app.module</span> which puts the routing straight in the app.module but using a code that paths it straight to the string immediately after path (path: 'destination')</p>
+
                     /:id is appended to the link to know which exact product's details to display. ** is useful for displaying a 404 not found page.<br>
                     In routing, the order matters. The top routes take priority, i.e it picks the first template that matches the link.<br>
                     You need <span>&lt;base href="/"&gt;</span> in the head of your index.html to tell it how to compose navigation Urls.</p>
@@ -706,8 +715,16 @@
                     CanDeactivate (navigating away from a route) <br>
                     Pre-fetch (resolve data before activating a route)<br>
                      CanLoad (to prevent asynchronus routing)<br>
-                    Any of these guard types can be used, just put the one you wanna use after 'implements' after the class name. Then code the method inside the class's{}. It often returns a boolean value, true to activate the route and false to cancel</p> <img src="Images/Guards syntax.png" class="in-line-image" alt=""><i>Guards syntax</i>
-                    <p>When you implement a guard, first generate it, edit its behavior then hook it up to what it's guarding.</p> <img src="Images/Using guards.png" class="in-line-image" alt=""> <i>Using guards flow</i> 
+                    Any of these guard types can be used, just put the one you wanna use after 'implements' after the class name. Then code the method inside the class's{}. It often returns a boolean value, true to activate the route and false to cancel</p> <img src="Images/Guards syntax.png" class="in-line-image" alt="">
+                    <br>
+                    <b><i>Routing Guards syntax</i></b>
+                    <p>When you implement a guard, first generate it, edit its behavior then hook it up to what it's guarding.</p> <img src="Images/Using guards.png" class="in-line-image" alt=""> 
+                    <br>
+                    <i>Routing Guard Types</i> 
+                    <ul>
+                      <li>canActivate = checks specific criteria before routing to.</li>
+                        <li>canDeactivate = checks criteria before routing away from current page.</li>
+                      </ul>
                     <br>
       <h4 id="ng-potential">Potential</h4>
       <p>There are the things I noticed you can do with Angular (<i>useful to note so when I've forgotten how to do them, I know it can be done and can go to google or back to the tutorial</i>)<br>
