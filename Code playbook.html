@@ -413,6 +413,8 @@
     <p>"getElementById" is used to tell JS which element you're reffering to, hence causing it to selece the element.</p>
     <p>"document.getElementById" tells it to get an element from the whole document. That's why it's <span>document.</span>.</p>
     <p>"mybutton.style.<span>display = "block";</span>" use this to control the style of the var 'mybutton', the css being <span>display = "block";</span>.</p>
+    <p>"in" keyword is used to check whether a property exists in a variable (which'll be in '') and retirns true or false. E.G <span>let result = 'firstName' in person; console.log(result); // it returns true as the result and logs that</span>
+      </p>
           </div>
         </div>
       </div>
@@ -555,7 +557,9 @@
                 <br>
                 <h4 id="ng-pipes">Pipes</h4>
                 Pipes style bound data before it's shown. Pipe syntax is <span>{{ product.productStuff | pipecommand: 'extra1' : 'extra2' : '1.2-2' }}</span> where extra are parameters and '1.2-2' means one whole figure and 2dp (2-2). A pipe must be declared (and imported) all the way in the app module before components can use it.
-                <br>Build a pipe when you want to perform application wide transformations.</p> <img src="Images/pipe examples.png" class="in-line-image" alt="">
+                <br>Build a pipe when you want to perform application wide transformations.</p> <img src="Images/pipe examples.png" class="in-line-image" alt=""> <br>
+                <p><b>Building a custom Pipe</b>: Custom pipes are mainly used for app unique data transformations. The pipe is a file named file.pipe.ts, then follows the syntax below.<br>
+                This is taught in<a href="https://app.pluralsight.com/course-player?clipId=21345ca1-0268-4db0-b92f-5b7720bdafd9"> lesson 5 of module 7</a>. </p><img src="Images/custom pipe.png" class="in-line-image" alt=""> <br>
         
                 <p id="ng-interpolation" ><b>Interpolation</b> is a data binding technique. Its synatx is <span>< >{{pageTitle}}< ></span> It's a one way binding from class to template. Class is <span>pageTitle: string = 'kdgjs';</span></p>. (I could make the data type any [] if I wasn't sure what data type the user would input.) The template is updated with the value of pageTitle as it changes based on the user's actions. It can even be used like a Concactenation. Here's the syntax:
                 <br>
@@ -578,6 +582,8 @@
                 OnChanges only watches for changes to input properties. 
                 <p id="ng-backing-variables"><b>Backing variable:</b> is the variable that acts as the pool of lists that a filter is drawn from. <span>private _amount: number = 0 </span> What makes it different is you can write a code to process it when it's get or set. </p>
                 <p id="ng-gettersnsetters"><b>Getters & Setters.</b></p>
+                <p>This enables you to write code that runs (does something) everytime the value of the setter is set. <br>
+                Use it to execute code whenever a property is gotten or set. </p>
                 <div id="frame">
                   <code> <p> <span>private</span> _listFilter: string = ' '; </p><br>
                     <p><span>get</span> listFilter(): string { <br>
@@ -1005,7 +1011,8 @@
                       <div>Cloning clones to your local files and you can work with that. Forking clones to your GitHub repository as
                           though you’re the account &nbsp;who pushed these files online.&nbsp;</div>
                       <div><br></div>
-                      <div>So you can use GitHub as version control for your own projects, then for collaboration.</div>
+                      <div>So you can use GitHub as version control for your own projects, then for collaboration.</div><br>
+                      <div>If you download the zip, as opposed to cloning the repo, you'll have to initialize git all from scratch. But If you clone, you can just make your branch and continue work.</div>
                       <div><br></div>
                       <div><br></div>
                       <div>
