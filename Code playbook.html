@@ -962,7 +962,7 @@
                       <li> use ‘<b>git log</b>’ to check that it’s been committed</li>
                       <li> after working on a file use ‘<b>git status</b>’ to show which has been modified since last commit.</li>
                       <li> ‘<b>git diff fileName</b>’ to check the difference between versions</li>
-                      <li> use ‘<b>git checkout</b>’ to revert to a previous version.&nbsp;</li>
+                      <li> use ‘<b>git checkout branchName</b>’ to switch branches.&nbsp;</li>
                     </ol>
                       <div><br></div>
                       <div><b><u>STEPS FOR REMOTE REPO</u></b></div>
@@ -1002,6 +1002,34 @@
                     <li>use <b>git reset --hard 6fbd8e824f3b260fcfddd6b22dff4c8b49301432</b><br>
                     This would take you to the point when you freshly committed 6fbd8e824f3b260fcfddd6b22dff4c8b49301432 and delete everthing done after that.</li>
                   </ol>
+                  <p><b>RESOLVING MERGE CONFLICTS</b> <br>
+                  To accept all incoming changes on vsCode, <br>
+                  <ol>
+                    <li>Navigate to the git source control at the left</li>
+                    <li>Use cmnd+a to select all</li>
+                    <li>Right click and select accept incoming changes (or whichever other option is applicable)</li>
+                  </ol> <br> 
+                View the sample in the pic: <br>
+              <img src="Images/git merge all incoming.webp" class="centered-image" alt=""></p>
+<br>
+              <div><b><u>GIT NOTES AND TIPS</u></b></div>
+              <ol>
+                <li><b>Exit commit terminal text-edit page</b>: Press <code>Esc</code> and then type <code>:wq</code> to save and exit when on the commit terminal page.</li>
+                <li><b>Uninitialize git</b>: Use <code>rm -rf .git</code> to uninitialize git if you ran git init by mistake.</li>
+                <li><b>Delete latest push</b>: "<code>git reset --hard intendedLatestCommitHashkey</code>" -> use "<code>git push --force</code>"</li>
+                <li><b>Undo latest unpushed commit</b>: <code>git reset --soft HEAD~ </code>    You can append a number to state number of commits back to go.</li>
+                <li><b>Get git deleted files back</b>: in version control to the left of VsCode, unstage them -> they return to the 'changes' section. -> select them all and click undo changes. -> files come back.</li>
+                <li><b>When git removes your work</b>, try "<code>git checkout femi_branch -- file/path</code>" to get files back (not cleanly).</li>
+                <li> <img src="Images/git commits ahead and behind.png" class="centered-image" alt=""> </li>
+                <li> Any file(s) deleted from the master would be removed from any branch that pulls the master.
+                     <img src="Images/bcuz test was removed pull removes it.png" class="centered-image" alt=""> </li>
+              </ol>
+<br>
+
+              <p><b>GIT BEST PRACTICES</b>:</p>
+              <p>First commit, then 'git pull' (if things go south, 'git stash'), then 'git push'. <br>
+                  'Git pull' is essentially 'git fetch' plus 'git merge'.</p>
+                  <p>Don't delete stuff from the remote repo. If there's stuff you don't want there, revert to the state you want so that it doesn't create the issue of git antagonizing the deleted files.</p>
                       <div><br></div>
                       <div><br></div>
                       <div><b><u>FINAL NOTES</u></b></div>

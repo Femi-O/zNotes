@@ -1,0 +1,160 @@
+https://github.com/The-Nigeria-Development-Foundation/wm-shop-seller.git
+
+https://onedrive.live.com/view.aspx?resid=12580E849472FF68!150624&ithint=file%2cxlsx&authkey=!AGwCYXvPkrA1gHA
+ExcelSheet2: https://1drv.ms/x/s!Amj_cpSEDlgSiakt6HJ8Ht3ciMp6gA?e=GPiXvA
+
+
+https://us02web.zoom.us/j/7218329302?pwd=U05Pb0ZuRkNHOWJMNkp6d20wNHN3dz09
+
+Michael's zoom
+https://us04web.zoom.us/j/4066991890?pwd=bkRxWGt5OENqLy95eGF5VG5BaE4vQT09
+
+EmporiumPage
+http://preview.themeforest.net/item/emporium-angular-material-design-ecommerce-template/full_screen_preview/21668189?_ga=2.154545969.846835.1643807832-1944799122.1643207141&_gac=1.186021083.1643207141.Cj0KCQiA_8OPBhDtARIsAKQu0ga3M8T2p23_BGrEouw-TE9nwXlLFAmCaiM_hiy23571rRJUrcC1bZgaAtT2EALw_wcB
+
+devdocs.
+
+Prestashop link: https://devdocs.prestashop.com/
+
+SoftwareTeam.NDF@gmail.com
+devex2020
+
+NDF Udemy: https://www.udemy.com/join/login-popup/?next=/course-dashboard-redirect/%3Fcourse_id%3D2626722
+
+
+LUCID CHART DETAILS
+coreprocess.ndf@gmail.com
+Devex2021
+
+Onedrive backend table to study for shopizer. Learn first 3 items on it 
+and speak with TJ about installing shopizer.
+https://1drv.ms/x/s!Amj_cpSEDlgSiaQEZhGqvHJZFqAMiw?e=DQQpUJ
+
+Shopizer 2 swagger link: https://shopizer.thewealthmarket.com/swagger-ui.html#/
+Username: WMShopAdmin
+Password: wealthMarket#21Shopizer
+
+Nest: http://wp.alithemes.com/html/nest/backend/page-products-list.html#
+
+
+current x link: https://onedrive.live.com/view.aspx?resid=12580E849472FF68!153310&ithint=file%2cxlsx&authkey=!ADp8OjrzR4z2laY
+Xlink 2: https://1drv.ms/x/s!Amj_cpSEDlgSia1eOnw6OvNHjPaVpg?e=Zgf0cP
+Going public post link: https://forum.thewealthmarket.com/t/going-public-september-2022-was-july-2021/2387/39?u=abiola
+
+Pluralsight GitHub desktop course: https://app.pluralsight.com/library/courses/getting-started-github-desktop/table-of-contents
+Postman Course on Pluralsight: https://app.pluralsight.com/library/courses/postman-fundamentals/table-of-contents
+<div>
+    OpenID is a protocol that enables websites or applications to grant access to users by authenticating them through another service or provider.
+    OpenID allows you to use login credentials from an OpenID provider (such as Google) to log in to another application (like Facebook). For example, if you want to access www.example.com, they can ask you for your OpenID in the form of a Google or Facebook account. If you enter your OpenID, example.com will redirect you to your OpenID provider and you will authenticate yourself, confirming your identity and then be allowed access to your account on example.com.
+    Welcome to OpenID Connect
+    What is OpenID Connect?
+    OpenID Connect 1.0 is a simple identity layer on top of the OAuth 2.0 protocol. It allows Clients to verify the identity of the End-User based on the authentication performed by an Authorization Server, as well as to obtain basic profile information about the End-User in an interoperable and REST-like manner.
+    OpenID Connect allows clients of all types, including Web-based, mobile, and JavaScript clients, to request and receive information about authenticated sessions and end-users. The specification suite is extensible, allowing participants to use optional features such as encryption of identity data, discovery of OpenID Providers, and session management, when it makes sense for them.
+    See https://openid.net/connect/faq/ for a set of answers to Frequently Asked Questions about OpenID Connect.
+    How is OpenID Connect different than OpenID 2.0?
+    OpenID Connect performs many of the same tasks as OpenID 2.0, but does so in a way that is API-friendly, and usable by
+</div>
+
+ON PAGE: 
+<div>
+    PracticeBranch. LibrariesCourse. TabulateSpecs 
+    GitHub access code: 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
+
+    filters, CRUD, mergeConflict, firestoreTesting
+    --I have to see what the data at the back looks like before I can call it to the UI 4CRUD
+    --find filter code (one more criterion saying after function is ran, run the other)
+    --do pagination
+    --route edit button
+    --alignments
+    --get service</div>
+
+
+email: seunjra@gmail.com
+password: Economicedu156
+
+3d039ba2-5fbd-3a4a-8ce0-60b12cbe2582
+
+made master with test file, committed that "initial commit".
+made branchA
+deleted test from master
+checked out to and made changes in branchA that don't involve/change the removed test file.
+committed those.
+took these to GitHub.
+created others' work on master and pushed.
+NOW I'VE SIMULATED WHAT HAPPENED!!
+Time To Try Pull.
+Pulling removes the initial file that was deleted from the master branch. (it also stages that change and if I commit it, I've lost test.txt)
+
+        FINDINGS:
+        1. Delete latest push: "git reset --hard intendedLatestCommitHashkey" -> use "git push --force"
+        2. Undo latest unpushed commit: git reset --soft HEAD~    You can append a number to state number of commits back to go.
+        3. Get git deleted files back: in version control to the left, unstage them -> they go to 'changes' section. -> select them all and click undo changes. -> files come back.
+        4. When git removes your work, use "git checkout femi_branch -- src/app" to get files back (not cleanly).
+
+FullLog:
+initial commit (16:06).  
+removed file from master(16:13).  
+-- branchA: some branch changes, added something.txt (16:21).
+others worked on same project(17:13).
+-- branchA: femi did more work creating femWork (17:16).
+
+Safe commit key on branchA:
+f8b91643b81749ed433604a049641745915d8a05
+
+Safer commit key, just remove flex.
+459026b3c8eb9418252f439b91ab0b5ed2222f97
+
+commit with half dev branch already
+51ad794e43e102c2862afac03ca87e59cbe354e5
+
+SOLUTION.
+try: branchA makes pull request to master to reintroduce test. --Made pull request but test.txt didn't come, and the files created after it came. 
+Meaning my former changes aren't safe yet. New changes can be introduced into Development branch but the old aren't secure with a pull request.
+
+pull request hasn't worked. Master got new files except test.txt... what now? 
+Back to Stack!
+Git rebase might do the trick; it brings his-branch, puts mine aside then commit by commit, I can restore mine.
+
+It's been removed in a master branch commit, far as that commit is in the master's history, pulling master would always implement that commit deleting test.txt. 
+It needs to be reintroduced AFTER it's been deleted.
+because tiles and info-cards were changed since Isi's deletion event, they weren't removed but now need to fix merge conflicts.
+
+git checkout HEAD test.txt  brought it back.
+the equivalent "git checkout femi_branch -- path" command in the admin app is bringing only some back, dunno why. 
+
+ADMIN: im not seeing any way to accept some and reject some changes in shop module. thats a merge conflict. for deletions, i may have put them back but i can't confirm that because some still have d beside them in the main project though theyre restored in the source control.
+
+Major issue: not cleanly restoring files. have to solve conflicts.
+
+Pulled, used "git checkout femi_branch -- src/app" to get files back cleanly, committed, pulled origin femi_branch,
+
+I think because of the commits,pushes/pulls I made in order to regain access to the state where my branch worked, the latest version of my branch has dev branch work but hasn't been merged. To get only my work I reset to a state of only my work and made a new branch from it, all to get rid of dev branch.
+
+resident evil demo
+
+WITH OJ:
+Manually backed up work-> Pulled -> it removed my work -> committed -> it added my work back 
+cleared conflicts  -> committed again. That worked I think.
+
+This thing is very confusing because I'm trying to reconcile many files some of which I do not know.
+
+ALONE:
+Made new branch from safer commit -> pulled dev -> removed my work -> committed -> didn't add my work back
+
+Made new branch from safer commit -> pulled dev -> removed my work -> got src/app back & fixed conflicts -> pushed ->
+wasn't complete so pulled dev again -> removed my work -> in version control unstaged them -> undid their changes. -> files came back ->
+i pushed. -> branch is up to date with dev -> didn't compile cuz of transcation html issue -> solved it. -> next issue, all my work says module build failed from node-modules, now I'm lost, this isn't git -> restarted app -> compiles without most of my work though it's on the app.
+my guess is I need to revert/checkout sidebar and perhaps routing module to my version, or copy the relevant code.
+
+
+The shop module has been edited by the dev branch's pull and that has removed my imports, routings etc.
+App-routing, shop-routing,  sidebar. More have issues.
+
+GOING FORWARD:
+-Consession That'll Work: New branch from dev -> add only relevant files manually.
+-Going forward, we don't know would happen if this issue rises again, but for now I can budget an hour a day to doing 
+it the git way. 
+
+This troubleshooting has made me better with source control in general. I noticed it.
+
+save files and clone dev branch.
