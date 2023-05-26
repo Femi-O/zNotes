@@ -1303,6 +1303,8 @@
               <li> Any file(s) deleted from the master would be removed from any branch that pulls the master.
                 <img src="Images/bcuz test was removed pull removes it.png" class="centered-image" alt=""> </li>
               <li><code>git diff origin -- index.html</code> compares the changes someone else made in index.html</li>
+              <li>My Mac didn't even seem to recognise git as a command. I troubleshot it and ran a command I saw online. <code>xcode-select --install</code>. Pulling wasn't working, so after troubleshooting, I used this command to pull <code>git config pull.rebase false  # merge</code>. Git lens was fixed by closing the window and refreshing it, after git had been fixed with the previous steps. 
+              </li>
             </ol>
             <br>
 
@@ -1317,6 +1319,7 @@
               <li> Use concise and meaningful commit names that show exactly what happened between last commit and now. </li>
               <li> Pull before every task. </li>
               <li> Review pull requests before merging them into the development branch. <b>**</b> <i class="fa-solid fa-star"></i> </li>
+              <li> When working with others on a repo, and you make a push, get it merged to the master immediately so that the timeline doesn't begin to see your work as old work and refuse to let it into the master.</li>
             </ol>
 
             <div><br></div>
