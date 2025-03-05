@@ -480,7 +480,7 @@
             <h3>Methods</h3>
             <p>"var" is used to commit something to browser memory (this can be forgotten by clearing the cache cmnd+k).
               A var name can't begin with numbers but can contain numbers.</p>
-            <p>"alert" used to cause browser to display an alert</p>
+            <p>"alert" used to cause browser to display an alert. NB: to make sentences display on a new line when alerting, use <span>alert(vaiable.join('\n'))</span></p>
             <p>"prompt" used to make a popup user can write in.</p>
             <p>"length" use tweet.length to return the length of the tweet. <span>Word.length</span> returns the length
               of the word.</p>
@@ -1274,6 +1274,14 @@
                 This would take you to the point when you freshly committed 6fbd8e824f3b260fcfddd6b22dff4c8b49301432 and
                 delete everthing done after that.</li>
             </ol>
+            <p><b><u>CHANGING MAIN BRANCH NAME LOCALLY</u></b> <br>
+              If you changed the name of a branch on GitHub, run the below commands locally to change the name of a branch from main to development. You can replace 'main' and 'development' with whatever names are relevant to your branches.
+              <ol>
+                <li>git branch -m main development</li>
+                <li>git fetch origin</li>
+                <li>git branch -u origin/development development</li>
+                <li>git remote set-head origin -a</li>
+              </ol>
             <p><b>RESOLVING MERGE CONFLICTS</b> <br>
               To accept all incoming changes on vsCode, <br>
               <ol>
@@ -1307,6 +1315,15 @@
               </li>
             </ol>
             <br>
+
+            <p><b>STEPS TO CHANGE LOCAL BRANCH NAME AFTER CHANGING IT ONLINE</b>:</p>
+            <p>In this example, the name "main" was changed to "development" online and is being updateed locally.</p>
+            <OL>
+              <li>git branch -m main development</li>
+              <li>git fetch origin</li>
+              <li>git branch -u origin/development development</li>
+              <li>git remote set-head origin -a</li>
+            </OL>
 
             <p><b>GIT BEST PRACTICES</b>:</p>
             <p>First commit, then 'git pull' (if things go south, 'git stash'), then 'git push'. <br>
